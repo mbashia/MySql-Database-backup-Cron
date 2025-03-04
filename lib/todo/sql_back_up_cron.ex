@@ -23,7 +23,6 @@ defmodule Todo.SqlBackUpCron do
 
   def dump_database(filename) do
     Logger.info("Creating MySQL dump...")
-    # backup_path = "/home/mbashia/projects/todo/priv/backups/#{filename}.sql"
     backup_path = "#{@backup_path}/#{filename}.sql"
     cmd = "mysqldump -u root -p'#{@database_password}' #{@database_name} > #{backup_path}"
 
