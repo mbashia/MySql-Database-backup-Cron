@@ -10,7 +10,7 @@
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
 
-1..15
+1..10000
 |> Enum.map(fn x ->
   %{
     name: "name#{x}",
